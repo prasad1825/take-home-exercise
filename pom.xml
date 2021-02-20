@@ -51,6 +51,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+    				<execution>
+      				<goals>
+       				<goal>repackage</goal>
+     				</goals>
+    				</execution>
+  				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.jetbrains.kotlin</groupId>
@@ -71,20 +78,6 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			<plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-            <configuration>
-                <mainClass>com.sify.scdm.solutionconfigurator.ScdmApplication</mainClass>
-            </configuration>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>repackage</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
 		</plugins>
 	</build>
 
